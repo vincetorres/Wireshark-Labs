@@ -32,12 +32,12 @@ Simulate network traffic using `hping3`, capture the traffic in **Wireshark**, a
    
    These settings ensure that hostnames are resolved in Wireshark. For example, `youtube.com` should appear instead of its raw IP address.
 
-Before
+##Before
 
 ![Name Resolution Before](https://github.com/user-attachments/assets/20579681-f7c5-40ae-bc3e-565a06476013)
 
 
-After
+##After
 
 ![Name Resolution After](https://github.com/user-attachments/assets/7e32e201-35c1-4bcf-88cb-d44e359ce5cc)
 

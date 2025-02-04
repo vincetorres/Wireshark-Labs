@@ -51,9 +51,7 @@ After
 
 ![Custom Name Resolution](https://github.com/user-attachments/assets/4969980d-d37d-4b20-9b36-587d5f819f98)
 
-   
-   - **Before and After Screenshots**:
-     - Show the process of adding this custom name and how the name appears in the Wireshark interface.
+(Need an explination of 
 
 ### 5. **Show Custom Name Resolved in Conversations**
    - Go to **Statistics > Conversations** in Wireshark to verify that the custom name resolution (`my-lab-machine.local`) is visible instead of the raw IP address in the conversation list.

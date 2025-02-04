@@ -1,4 +1,4 @@
-# Wireshark Network Traffic Analysis Lab 
+# Wireshark Name Resolution Lab
 
 ## Objective
 Simulate network traffic using `hping3`, capture the traffic in **Wireshark**, apply name resolution settings, and configure custom name resolution to demonstrate the ability to analyze and interpret network traffic.

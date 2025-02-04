@@ -1,4 +1,4 @@
-# Wireshark Network Traffic Analysis
+# Wireshark Network Traffic Analysis Lab 
 
 ## Objective
 Simulate network traffic using `hping3`, capture the traffic in **Wireshark**, apply name resolution settings, and configure custom name resolution to demonstrate the ability to analyze and interpret network traffic.
@@ -9,12 +9,15 @@ Simulate network traffic using `hping3`, capture the traffic in **Wireshark**, a
    - Use `hping3` to send a **SYN** packet to **youtube.com** on port 443 (HTTPS) to generate network traffic for Wireshark capture.  
      Command used:
      ```bash
-     hping3 -S -p 443 youtube.com
+     Sudo hping3 -S -p 443 youtube.com
      ```
+
+![Simulating traffic using hping3](https://github.com/user-attachments/assets/4d807bd9-ff08-4455-9050-68a25418bf5e)
+
+
 
 ### 2. **Running Wireshark**
    - Start **Wireshark** and begin capturing traffic on the relevant network interface (e.g., `eth0` or `wlan0`).
-     - (No screenshot for this step, as it simply involves running the tool and starting the capture.)
 
 ### 3. **Name Resolution Settings**
    - Configure **Wireshark** to resolve:
@@ -23,17 +26,31 @@ Simulate network traffic using `hping3`, capture the traffic in **Wireshark**, a
      - **IP addresses**
      - **DNS packet data**
      - **System DNS settings**
+    
+   ![Name Resolution settings](https://github.com/user-attachments/assets/427990fe-1e3a-4d49-b1ca-bc03f63682a8)
+
    
    These settings ensure that hostnames are resolved in Wireshark. For example, `youtube.com` should appear instead of its raw IP address.
-   
-   - **Before and After Screenshots**:
-     - Show how the name resolution settings resolve `youtube.com` instead of just the raw IP address.
+
+Before
+
+![Name Resolution Before](https://github.com/user-attachments/assets/20579681-f7c5-40ae-bc3e-565a06476013)
+
+
+After
+
+![Name Resolution After](https://github.com/user-attachments/assets/7e32e201-35c1-4bcf-88cb-d44e359ce5cc)
+
+
 
 ### 4. **Custom Name Resolution**
    - Edit **Name Resolution** settings in Wireshark to associate a custom name (`my-lab-machine.local`) with my local machine’s IP address.
    - **Custom Resolution Steps**:
      - Go to **Edit > Preferences > Name Resolution > Edit**.
      - Add custom name mapping for my IP: `my-lab-machine.local`.
+
+![Custom Name Resolution](https://github.com/user-attachments/assets/4969980d-d37d-4b20-9b36-587d5f819f98)
+
    
    - **Before and After Screenshots**:
      - Show the process of adding this custom name and how the name appears in the Wireshark interface.
